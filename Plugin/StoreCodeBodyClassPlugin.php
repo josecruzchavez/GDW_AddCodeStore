@@ -13,8 +13,11 @@ class StoreCodeBodyClassPlugin implements ObserverInterface
     protected $_helper;
     protected $storeManager;
 
-    public function __construct(Config $config, Helper $helper, StoreManagerInterface $storeManager)
-    {
+    public function __construct(
+        Config $config,
+        Helper $helper,
+        StoreManagerInterface $storeManager
+    ){
         $this->config = $config;
         $this->_helper = $helper;
         $this->storeManager = $storeManager;

@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Store/etc/config.xsd">
-    <system>
+    <default>
         <gdwaddcodestore>
             <general>
                 <enable>1</enable>
             </general>
         </gdwaddcodestore>
-    </system>
+    </default>
 </config>
