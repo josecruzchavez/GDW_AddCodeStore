@@ -6,9 +6,8 @@ use GDW\Core\Block\Adminhtml\System\Core\ModuleInfoFull as Fieldset;
 class ModuleInfoFull extends Fieldset
 {
     const GDW_MODULE_CODE = 'GDW_AddCodeStore';
-    const GDW_MODULE_LINK = 'adminhtml/system_config/edit/section/gdwaddcodestore';
-    const GDW_MODULE_LINK_SECC = '#gdwaddcodestore_general-link';
-
+    const GDW_MODULE_LINK = 'adminhtml/system_config/edit/section/gdwweb';
+    const GDW_MODULE_LINK_SECC = '#gdwweb_addcodestore-link';
     public function getDescFull()
     {
         $html =
