@@ -9,30 +9,30 @@
                 </field>
             </group>
         </section>
-        <section id="gdwaddcodestore" type="text" translate="label" sortOrder="990" showInDefault="1" showInWebsite="1" showInStore="1">
-            <class>separator-top</class>
-            <label>GDW Add Code Store</label>
-            <tab>gdwcore</tab>
-            <resource>GDW_AddCodeStore::Config</resource>
-                <group id="gdwaddcodestoreabout" type="text" translate="label" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Acerca del Módulo</label>
-                    <field id="gdwaddcodestoreinfo" type="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
-                        <frontend_model>GDW\AddCodeStore\Block\Adminhtml\System\ModuleInfo</frontend_model>
-                    </field>
-                </group>
-                <group id="general" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>General</label>
-                    <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
-                        <label>¿Módulo habilitado?</label>
-                        <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                    </field>
-                    <field id="custom_class" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
-                        <label>Clase Personalizada</label>
-                        <depends>
-                            <field id="enable">1</field>
-                        </depends>
-                    </field>
-                </group>
+
+        <section id="gdwweb">
+            <group id="gdwcoreabout" type="text" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Acerca de</label>
+                <frontend_model>GDW\Core\Block\Adminhtml\System\Core\GlobalAds</frontend_model>
+            </group>
+
+            <group id="addcodestore" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Add Code Store</label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>¿Módulo habilitado?</label>
+                    <config_path>gdw/web_addcodestore/enable</config_path>
+                        <comment>Agregará el código de la tienda en la tag Body</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="custom_class" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Clase Personalizada</label>
+                    <config_path>gdw/web_addcodestore/custom_class</config_path>
+                    <comment>Será agregada adicionalmente a la tag body en cada vista de tienda</comment>
+                    <depends>
+                        <field id="enable">1</field>
+                    </depends>
+                </field>
+            </group>
         </section>
     </system>
 </config>

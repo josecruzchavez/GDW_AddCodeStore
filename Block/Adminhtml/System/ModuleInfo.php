@@ -9,6 +9,6 @@ class ModuleInfo extends Fieldset
 
     public function getDesc()
     {
-        return 'agregar el código de tienda en la etiqueta BODY.';
+        return 'Agregar el código de tienda en la etiqueta BODY.';
     }
 }
