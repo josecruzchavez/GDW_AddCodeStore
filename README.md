@@ -4,7 +4,7 @@
 Este módulo tiene la finalidad de agregar el código de tienda y sitio web a la etiqueta BODY, el objetivo es poder diferenciar las tiendas.
 
 ## Compatibilidad
-✓ Magento 2.3.x, ✓ Magento 2.4.x
+✓ Magento 2.4.0 a 2.4.3 (rama 4.x)
 <br/>
 
 ###### Ejecuta los siguientes comandos en la ruta base de Magento.
