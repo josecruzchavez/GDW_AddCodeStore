@@ -1,6 +1,12 @@
-![gdw_opengraph](https://gestiondigitalweb.com/github_assets/gdw_addcodestore/gdw_add_code_store.jpg)
+![gdw_opengraph](https://medios.gdw.mx/github_assets/gdw_addcodestore/gdw_add_code_store.jpg)
 
 # GDW AddCodeStore para Magento 2
+[![Latest Stable Version](https://img.shields.io/packagist/v/gdw/addcodestore?style=for-the-badge)](https://packagist.org/packages/gdw/addcodestore) [![PHP Version Require](https://img.shields.io/packagist/dependency-v/gdw/addcodestore/php?style=for-the-badge)](https://packagist.org/packages/gdw/addcodestore) [![Magento Framework Require](https://img.shields.io/packagist/dependency-v/gdw/addcodestore/magento%2Fframework?style=for-the-badge)](https://packagist.org/packages/gdw/addcodestore) [![License](https://img.shields.io/packagist/l/gdw/addcodestore?style=for-the-badge)](https://packagist.org/packages/gdw/addcodestore)
+
+
+
+
+
 Este módulo tiene la finalidad de agregar el código de tienda y sitio web a la etiqueta BODY, el objetivo es poder diferenciar las tiendas.
 
 ## Compatibilidad
