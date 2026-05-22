@@ -23,15 +23,18 @@ class StoreCodeBodyClassPlugin implements ObserverInterface
         $this->storeManager = $storeManager;
     }
 
-    public function execute(Observer $observer){
-        if($this->helper->getDirectVal('enable') == true){
+    public function execute(Observer $observer)
+    {
+        if ($this->helper->isEnabled()) {
             $store = $this->storeManager->getStore();
             $storeCode = $store->getCode();
             $websiteCode = $store->getWebsite()->getCode();
-            $newclass = $storeCode.' '.$websiteCode;
+            $newclass = $storeCode . ' ' . $websiteCode;
             $this->config->addBodyClass($newclass);
-            if($this->helper->getDirectVal('custom_class') != ''){
-                $this->config->addBodyClass($this->helper->getDirectVal('custom_class'));
+
+            $customClass = $this->helper->getCustomClass();
+            if ($customClass !== '') {
+                $this->config->addBodyClass($customClass);
             }
         }
     }
