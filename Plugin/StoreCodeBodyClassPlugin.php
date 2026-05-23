@@ -9,9 +9,9 @@ use Magento\Store\Model\StoreManagerInterface;
 
 class StoreCodeBodyClassPlugin implements ObserverInterface
 {
-    protected $config;
-    protected $helper;
-    protected $storeManager;
+    protected Config $config;
+    protected Helper $helper;
+    protected StoreManagerInterface $storeManager;
 
     public function __construct(
         Config $config,
@@ -28,7 +28,7 @@ class StoreCodeBodyClassPlugin implements ObserverInterface
         if ($this->helper->isEnabled()) {
             $store = $this->storeManager->getStore();
             $storeCode = $store->getCode();
-            $websiteCode = $store->getWebsite()->getCode();
+            $websiteCode = $this->storeManager->getWebsite($store->getWebsiteId())->getCode();
             $newclass = $storeCode . ' ' . $websiteCode;
             $this->config->addBodyClass($newclass);
 
