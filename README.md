@@ -1,4 +1,4 @@
-![gdw_opengraph](https://medios.gdw.mx/github_assets/gdw_addcodestore/gdw_add_code_store.jpg)
+![gdw_addcodestore](https://medios.gdw.mx/github_assets/gdw_addcodestore/gdw_add_code_store.jpg)
 
 # GDW AddCodeStore para Magento 2
 [![Latest Stable Version](https://img.shields.io/packagist/v/gdw/addcodestore?style=for-the-badge)](https://packagist.org/packages/gdw/addcodestore) [![PHP Version Require](https://img.shields.io/packagist/dependency-v/gdw/addcodestore/php?style=for-the-badge)](https://packagist.org/packages/gdw/addcodestore) [![Magento Framework Require](https://img.shields.io/packagist/dependency-v/gdw/addcodestore/magento%2Fframework?style=for-the-badge)](https://packagist.org/packages/gdw/addcodestore) [![License](https://img.shields.io/packagist/l/gdw/addcodestore?style=for-the-badge)](https://packagist.org/packages/gdw/addcodestore)
@@ -10,8 +10,9 @@
 Este módulo tiene la finalidad de agregar el código de tienda y sitio web a la etiqueta BODY, el objetivo es poder diferenciar las tiendas.
 
 ## Compatibilidad
-✓ Magento 2.4.4+ (rama 4.4.x)
-<br/>
+- Rama 4.4.x: Magento 2.4.4+ con PHP 8.1 a 8.3
+- Rama 4.x: Magento 2.4.0 a 2.4.3 con PHP 7.4
+- Rama 3.x: Magento 2.3.x con PHP 7.4
 
 ###### Ejecuta los siguientes comandos en la ruta base de Magento.
 
@@ -42,7 +43,7 @@ php bin/magento cache:flush
 ### Eliminación
 
 ```
-php bin/magento module:disbale GDW_AddCodeStore
+php bin/magento module:disable GDW_AddCodeStore
 composer remove gdw/addcodestore
 php bin/magento setup:upgrade
 php bin/magento setup:di:compile
@@ -57,7 +58,7 @@ php bin/magento cache:flush
 * [🍺 Invítame una cerveza.](https://www.paypal.me/gestiondigitalweb)
 
 ### Otros enlaces
-* [Sitio web](https://gdw.com/?utm_source=github&utm_medium=gdw&utm_campaign=core&utm_id=link)
+* [Sitio web](https://gdw.mx/?utm_source=github&utm_medium=gdw&utm_campaign=addcodestore&utm_id=link)
 * [Listado de Módulos](https://gdw.mx/modulos/)
 * [Facebook](https://www.facebook.com/GestionDigitalWeb)
 * [Youtube](https://www.youtube.com/c/Gestiondigitalweb)
